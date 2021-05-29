@@ -1,0 +1,74 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+body {
+    min-height:100vh;
+    background-color: #ccc;
+}
+.tools {
+    background-color: #fff;
+}
+.table {
+    background-color: white;
+}
+.card-show {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.aside {
+    position: relative;
+    min-height:70vh;
+    background-color: white;
+    text-align: center;
+    .aside__ul {
+        list-style:none;
+        .aside__li{
+            margin-top:7vh;
+            height:5vh;
+            @media(max-width: 850px) and (orientation: landscape){
+                height:15vh;
+            }
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                h5 {
+                    transition: 0.3s;
+                    @media (min-width:1280px) {
+                        &:hover{
+                            font-size:1.5rem;
+                        }
+                    }
+                    @media(max-width: 400px) {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:10vh;
+    .footer__h6 {
+        font-style: italic;
+    }
+}
+
+.header {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-family: $header-font;
+    height:15vh;
+}
