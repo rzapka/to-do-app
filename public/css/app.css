@@ -10075,3 +10075,9 @@ body {
   font-family: "Bangers", "Arial", "sans-serif";
   height: 15vh;
 }
+
+@media (max-width: 400px) and (orientation: portrait) {
+  html {
+    width: 150vw !important;
+  }
+}
