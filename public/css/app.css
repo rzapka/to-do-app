@@ -10076,7 +10076,7 @@ body {
   height: 15vh;
 }
 
-@media (max-width: 400px) and (orientation: portrait) {
+@media (max-width: 500px) and (orientation: portrait) {
   html {
     width: 150vw !important;
   }
